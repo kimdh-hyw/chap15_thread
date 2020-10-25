@@ -40,7 +40,7 @@ public class TimedWaiting_Sleep {
 		System.out.println("MyThread2 State = " + myThread2.getState()); //Timed_waiting
 		
 		myThread2.interrupt();
-		try {Thread.sleep(100);} catch (InterruptedException e) {} //쓰레드 시작 준비 시간
+		try {Thread.sleep(100);} catch (InterruptedException e) {} //인터럽트 준비 시간
 		System.out.println("MyThread1 State = " + myThread1.getState()); //Runnable
 		System.out.println("MyThread2 State = " + myThread2.getState()); //Runnable
 				
