@@ -1,4 +1,4 @@
-package sec05_threadstates.EX03_TimedWaiting_Sleep;
+package sec05_threadstates.EX04_TimedWaiting_Join;
 
 
 class MyThread1 extends Thread {
@@ -26,7 +26,7 @@ class MyThread2 extends Thread {
 }
 
 
-public class TimedWaiting_Sleep {
+public class TimedWaiting_Join {
 	public static void main(String[] args) {
 		
 		//#1. 객체 생성 

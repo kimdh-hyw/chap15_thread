@@ -44,5 +44,4 @@ public class Waiting_WaitNotify_2 {
 		t1.start();
 		t2.start();
 	}
-
 }

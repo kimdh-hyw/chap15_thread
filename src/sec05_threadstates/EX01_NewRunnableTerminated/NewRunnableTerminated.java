@@ -27,7 +27,6 @@ public class NewRunnableTerminated {
 		} catch (InterruptedException e) {	}
 		
 		state = thread.getState();
-		System.out.println("thread state = "+ state); //TERMINATED
-		
+		System.out.println("thread state = "+ state); //TERMINATED		
 	}
 }

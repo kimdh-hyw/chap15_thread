@@ -15,7 +15,6 @@ class MyThread extends Thread {
 	}
 }
 
-
 public class YieldInRunnableState {
 	public static void main(String[] args) {
 		MyThread thread1 = new MyThread();

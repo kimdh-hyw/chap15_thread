@@ -46,7 +46,6 @@ public class CreateAndStartThread_M2C2 {
 		Runnable videoFileRunnable = new VideoFileRunnable();
 		//videoFileRunnable.start(); //오류
 		Thread thread2 = new Thread(videoFileRunnable);
-		thread2.start();
-		
+		thread2.start();		
 	}
 }

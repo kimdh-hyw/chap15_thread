@@ -15,7 +15,6 @@ class SMIFileRunnable implements Runnable {
 			try { Thread.sleep(200);} catch (InterruptedException e) {}
 		}		
 	}
-
 }
 
 public class CreateAndStartThread_M2C1 {

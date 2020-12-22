@@ -1,4 +1,4 @@
-package sec05_threadstates.EX04_TimedWaiting_Join;
+package sec05_threadstates.EX03_TimedWaiting_Sleep;
 
 class MyThread extends Thread {
 	@Override
@@ -12,8 +12,7 @@ class MyThread extends Thread {
 	}
 }
 
-
-public class TimedWaiting_Join {
+public class TimedWaiting_Sleep {
 	public static void main(String[] args) {
 		
 		MyThread myThread = new MyThread();

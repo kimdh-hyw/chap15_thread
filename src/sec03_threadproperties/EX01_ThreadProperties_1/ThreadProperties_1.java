@@ -33,7 +33,6 @@ public class ThreadProperties_1 {
 		}
 		
 		//#5. 쓰레드 수 
-		System.out.println("동작하는 쓰레스 수 = " + Thread.activeCount());
-		
+		System.out.println("동작하는 쓰레스 수 = " + Thread.activeCount());		
 	}
 }

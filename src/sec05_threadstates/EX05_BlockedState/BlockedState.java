@@ -25,8 +25,7 @@ class MyBlockTest {
 		t1.start();
 		t2.start();
 		t3.start();
-	}
-	
+	}	
 	
 	class MyClass {
 		synchronized void syncMethod() {
@@ -37,15 +36,12 @@ class MyBlockTest {
 			System.out.println("thread3->" +t3.getState());			
 			for(long i=0; i<1000000000L ; i++) {} //시간지연
 		}
-	}
-	
+	}	
 }
 
 public class BlockedState {
 	public static void main(String[] args) {
 		MyBlockTest mbt = new MyBlockTest();
-		mbt.startAll();
-				
+		mbt.startAll();				
 	}
-
 }
