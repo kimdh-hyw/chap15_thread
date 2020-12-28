@@ -21,7 +21,7 @@ public class ThreadProperties_3_1 {
 		thread1.start();
 				
 		//# 3초후 main Thread 종료
-		try {Thread.sleep(3100);} catch (InterruptedException e) {}
+		try {Thread.sleep(3500);} catch (InterruptedException e) {}
 		System.out.println("main Thread 종료");
 	}
 }
