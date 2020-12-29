@@ -18,11 +18,11 @@ public class TimedWaiting_Sleep {
 		MyThread myThread = new MyThread();
 		myThread.start();
 		
-		try {Thread.sleep(100);} catch (InterruptedException e) {} //쓰레드 시작 준비 시간
+		try {Thread.sleep(100);} catch (InterruptedException e) {} //쓰레드 시작 준비시간
 		System.out.println("MyThread State = " + myThread.getState()); //TIMED_WAITING
 		
 		myThread.interrupt();
-		try {Thread.sleep(100);} catch (InterruptedException e) {} //쓰레드 시작 준비 시간
-		System.out.println("MyThread State = " + myThread.getState()); //Runnable
+		try {Thread.sleep(100);} catch (InterruptedException e) {} //인터럽트 준비시간
+		System.out.println("MyThread State = " + myThread.getState()); //RUNNABLE
 	}
 }

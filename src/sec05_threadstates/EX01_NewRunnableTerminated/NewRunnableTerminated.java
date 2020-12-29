@@ -6,27 +6,26 @@ public class NewRunnableTerminated {
 		Thread.State state;
 		
 		//#1. 객체 생성 (NEW)
-		Thread thread = new Thread() {
+		Thread myThread = new Thread() {
 			@Override
 			public void run() {
 				for(long i=0; i<1000000000L ; i++) {} //시간지연
 			}
 		};		
-		state = thread.getState(); 
-		System.out.println("thread state = "+ state); //NEW
+		state = myThread.getState(); 
+		System.out.println("myThread state = "+ state); //NEW
 		
-		//#2. Thread 시작
-		thread.start();
-		state = thread.getState();
-		System.out.println("thread state = "+ state); //Runnable
-		
-		
-		//#3. Thread 종료
+		//#2. myThread 시작
+		myThread.start();
+		state = myThread.getState();
+		System.out.println("myThread state = "+ state); //Runnable
+				
+		//#3. myThread 종료
 		try {
-			thread.join();
+			myThread.join();
 		} catch (InterruptedException e) {	}
 		
-		state = thread.getState();
-		System.out.println("thread state = "+ state); //TERMINATED		
+		state = myThread.getState();
+		System.out.println("myThread state = "+ state); //TERMINATED		
 	}
 }
