@@ -25,7 +25,6 @@ class MyThread2 extends Thread {
 	}
 }
 
-
 public class TimedWaiting_Join {
 	public static void main(String[] args) {
 		
@@ -36,13 +35,13 @@ public class TimedWaiting_Join {
 		myThread2.start();
 		
 		try {Thread.sleep(100);} catch (InterruptedException e) {} //쓰레드 시작 준비 시간
-		System.out.println("MyThread1 State = " + myThread1.getState()); //Runnable
-		System.out.println("MyThread2 State = " + myThread2.getState()); //Timed_waiting
+		System.out.println("MyThread1 State = " + myThread1.getState()); //RUNNABLE
+		System.out.println("MyThread2 State = " + myThread2.getState()); //TIMED_WAITING
 		
 		myThread2.interrupt();
 		try {Thread.sleep(100);} catch (InterruptedException e) {} //인터럽트 준비 시간
-		System.out.println("MyThread1 State = " + myThread1.getState()); //Runnable
-		System.out.println("MyThread2 State = " + myThread2.getState()); //Runnable
+		System.out.println("MyThread1 State = " + myThread1.getState()); //RUNNABLE
+		System.out.println("MyThread2 State = " + myThread2.getState()); //RUNNABLE
 				
 	}
 }

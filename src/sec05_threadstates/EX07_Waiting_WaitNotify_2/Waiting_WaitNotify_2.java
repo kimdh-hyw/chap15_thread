@@ -27,7 +27,7 @@ public class Waiting_WaitNotify_2 {
 		DataBox dataBox = new DataBox();
 		Thread t1 = new Thread() {
 			public void run() {
-				for(int i=0; i<9; i++) {
+				for(int i=1; i<9; i++) {
 					dataBox.inputData(i);
 				}
 			};
@@ -35,7 +35,7 @@ public class Waiting_WaitNotify_2 {
 		
 		Thread t2 = new Thread() {
 			public void run() {
-				for(int i=0; i<9; i++) {
+				for(int i=1; i<9; i++) {
 					dataBox.outputData();
 				}
 			};

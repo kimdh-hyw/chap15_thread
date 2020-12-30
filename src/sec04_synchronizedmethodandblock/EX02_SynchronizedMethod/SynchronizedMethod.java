@@ -4,13 +4,10 @@ package sec04_synchronizedmethodandblock.EX02_SynchronizedMethod;
 class MyData {
 	int data = 3;
 	
-	public void plusData() {
-		//....
-		synchronized (this) {
-			int mydata = data; //데이터를 가져오기
-			try { Thread.sleep(2000);} catch (InterruptedException e) {}		
-			data = mydata+1;
-		}
+	public synchronized void plusData() {
+		int mydata = data; //데이터를 가져오기
+		try { Thread.sleep(2000);} catch (InterruptedException e) {}		
+		data = mydata+1;
 	}
 }
 
