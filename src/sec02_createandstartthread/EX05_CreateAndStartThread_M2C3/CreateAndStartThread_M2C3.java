@@ -3,7 +3,7 @@ package sec02_createandstartthread.EX05_CreateAndStartThread_M2C3;
 public class CreateAndStartThread_M2C3 {
 	public static void main(String[] args) {
 		
-		//Thread 객체 생성 자막번호
+		//자막번호를 출력하는 쓰레드의 익명이너클래스 정의
 		Thread thread1 = new Thread(new Runnable() {
 			@Override
 			public void run() {
@@ -18,7 +18,7 @@ public class CreateAndStartThread_M2C3 {
 			}
 		});
 		
-		//비디오 번호 
+		//비디오 프레임 번호를 출력하는 쓰레드의 익명이너클래스 정의
 		Thread thread2 = new Thread(new Runnable() {
 			@Override
 			public void run() {
