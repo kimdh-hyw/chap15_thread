@@ -16,7 +16,7 @@ public class ThreadProperties_3_2 {
 		
 		//# 데몬쓰레드
 		Thread thread2 = new MyThread();
-		thread2.setDaemon(true);//디폴트
+		thread2.setDaemon(true);//데몬쓰레드로 설정
 		thread2.setName("thread2");
 		thread2.start();
 		
