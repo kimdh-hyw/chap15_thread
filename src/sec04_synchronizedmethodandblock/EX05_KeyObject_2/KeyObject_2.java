@@ -1,6 +1,7 @@
 package sec04_synchronizedmethodandblock.EX05_KeyObject_2;
 
 class MyData {
+	Object obj = new Object();
 	synchronized void abc() {
 		for(int i=0; i<3; i++) {
 			System.out.println(i + "sec");
@@ -16,7 +17,7 @@ class MyData {
 	}
 	
 	void cde() {
-		synchronized(new Object()) {
+		synchronized(obj) {
 			for(int i=0; i<3; i++) {
 				System.out.println(i + "번째");
 				try { Thread.sleep(1000); } catch (InterruptedException e) {}
@@ -50,6 +51,7 @@ public class KeyObject_2 {
 		}.start();
 	}
 }
+
 
 
 
